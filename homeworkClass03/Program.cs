@@ -45,6 +45,37 @@ namespace homeworkClass03
                 }
 
              Console.WriteLine($"The sum of all numbers is {sum}");
+
+            //Exercise 2 Array names
+            Console.WriteLine("--------- Exercise 2 Array names -----------");
+            
+            string[] names = new string[0];
+
+            while(true)
+                {
+                Array.Resize(ref names, names.Length + 1);
+
+                Console.WriteLine("Enter name");
+
+                names[names.Length -1] = Console.ReadLine();
+
+                Console.WriteLine("Do you whant to enter another name? Y/n");
+
+                string input = Console.ReadLine();
+
+                if(input == "n" || input == "N")
+                    {
+                    break;   
+                    }     
+                
+                }
+
+            foreach(var name in names)
+                {
+                Console.Write($"{name} ");
+                }
+            
+
              Console.ReadKey();
                 
                                                              
