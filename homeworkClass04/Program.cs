@@ -36,7 +36,7 @@ namespace homeworkClass04
             string first = text.Substring(0, number);
             string second = text.Substring(number);
 
-            Console.WriteLine($@"'{first}' and '{second}'");
+            Console.WriteLine($"'{first}' and '{second}'");
             Console.ReadKey();
 
 

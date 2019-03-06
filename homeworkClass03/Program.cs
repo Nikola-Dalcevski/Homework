@@ -70,12 +70,32 @@ namespace homeworkClass03
                 
                 }
 
+
+            string largestName = "";
+            string smallestName = "";
+            int allLength = 0;
+            
             foreach(var name in names)
                 {
-                Console.Write($"{name} ");
+                if(largestName.Length < name.Length)
+                    {
+                    largestName = name;
+                    }
+                
+                if(smallestName == "")
+                    {
+                    smallestName = name;
+                    }
+                else if(smallestName.Length > name.Length)
+                    {
+                    smallestName = name;
+                    }
+                  allLength += name.Length;
                 }
             
-
+            var averige = allLength / names.Length;
+            Console.WriteLine($"The largestname is {largestName} and the smallest is {smallestName}");
+            Console.WriteLine($"The averige length of the names is {averige}");
              Console.ReadKey();
                 
                                                              
