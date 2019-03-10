@@ -54,7 +54,7 @@ namespace homeworkClass03
             while(true)
                 {
                 Array.Resize(ref names, names.Length + 1);
-
+                
                 Console.WriteLine("Enter name");
 
                 names[names.Length -1] = Console.ReadLine();

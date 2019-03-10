@@ -40,6 +40,64 @@ namespace homeworkClass04
             Console.ReadKey();
 
 
+            //Exercise 02 Age Calculator
+            Console.WriteLine("-------------Exercise 2 Age calculator------------");
+              startt:
+             Console.WriteLine("Enter birth year:");
+                    var inputYear = Console.ReadLine();
+                    bool isNumberYear = int.TryParse(inputYear, out int myYear);
+                    Console.WriteLine("Enter birth month:");
+                    var inputMonth = Console.ReadLine();
+                    bool isNumberMonth = int.TryParse(inputMonth, out int myMonth);
+                    Console.WriteLine("Enter birth day:");
+                    var inputDay = Console.ReadLine();
+                    bool isNumberDay = int.TryParse(inputDay, out int myDay);
+
+                        
+                    if(!isNumberYear || inputYear.Length > 4 )
+                        {
+                        Console.WriteLine("You entered invalid year please try again");
+                        goto startt;
+                        }
+                    else if(!isNumberMonth || inputMonth.Length > 12 || inputMonth.Length < 1)
+                        {
+                        Console.WriteLine("You entered invalid year please try again");
+                         goto startt;
+                        }
+                    else if(!isNumberDay ||  inputMonth.Length > 31 || inputMonth.Length < 1 )
+                        {
+                        Console.WriteLine("You entered invalid day please try again");
+                         goto startt;
+                        }
+                  
+            
+              int AgeCalculator(int year, int month, int day)
+                {
+                var birthDate = new DateTime(year,month,day);
+                var result = DateTime.Today.Year - birthDate.Year;
+                return result;
+                }
+
+            Console.WriteLine(AgeCalculator(myYear,myMonth,myDay));
+                  
+
+
+
+
+
+
+            
+  
+            
+         
+                
+            
+
+
+      
+
+
+
             
         }
     }
