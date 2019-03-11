@@ -37,8 +37,7 @@ namespace homeworkClass04
             string second = text.Substring(number);
 
             Console.WriteLine($"'{first}' and '{second}'");
-            Console.ReadKey();
-
+            
 
             //Exercise 02 Age Calculator
             Console.WriteLine("-------------Exercise 2 Age calculator------------");
@@ -75,12 +74,19 @@ namespace homeworkClass04
                 {
                 var birthDate = new DateTime(year,month,day);
                 var result = DateTime.Today.Year - birthDate.Year;
-                return result;
+
+                if(DateTime.Today.DayOfYear < birthDate.DayOfYear)
+                    {
+                    result -= 1;
+                    }
+              return result;
+      
+                
                 }
 
             Console.WriteLine(AgeCalculator(myYear,myMonth,myDay));
                   
-
+            Console.ReadLine();
 
 
 

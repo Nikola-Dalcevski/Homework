@@ -57,6 +57,8 @@ namespace homeworkClass03
                 
                 Console.WriteLine("Enter name");
 
+
+
                 names[names.Length -1] = Console.ReadLine();
 
                 Console.WriteLine("Do you whant to enter another name? Y/n");
