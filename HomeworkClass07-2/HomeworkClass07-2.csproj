@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0AACDF3-73D8-4B9F-9BD4-BED36959A237}</ProjectGuid>
+    <ProjectGuid>{8C33D3E3-879E-40C2-A66A-D231BC6344C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>homeworkClass07</RootNamespace>
-    <AssemblyName>homeworkClass07</AssemblyName>
+    <RootNamespace>HomeworkClass07_2</RootNamespace>
+    <AssemblyName>HomeworkClass07_2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dog.cs" />
-    <Compile Include="Human.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
